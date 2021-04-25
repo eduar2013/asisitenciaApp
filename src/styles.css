@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+
+@layer components {
+    .lb-label {
+      @apply block uppercase tracking-wide text-gray-700 text-xs font-bold;
+    }
+
+    .input-text {
+        @apply block w-full rounded py-1 px-2 mb-1 border border-gray-300
+    }
+
+    .input-number{
+        @apply block rounded py-1 px-2 mb-1 border border-gray-300
+    }
+
+}
+
+@tailwind utilities;

@@ -1,0 +1,39 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <h2 class="active"> Asistencia Contable </h2>
+    <!-- Icon -->
+   
+
+    <!-- Login Form -->
+    <form class="login"
+          autocomplete="off"
+          [formGroup]="loginForm"
+          (ngSubmit)="login()">
+      <div>
+      <i class="fa fa-user"></i>
+      <input type="text"
+             id="username"
+             class="fadeIn second" 
+             placeholder="Usuario"
+             formControlName="username"
+             autofocus>
+        </div>
+        <div>      
+        <i class="fa fa-key"></i> 
+        <input type="password" 
+             id="password" 
+             class="fadeIn third" 
+             placeholder="Contraseña"
+             formControlName="password">
+        </div>             
+      <input type="submit" class="fadeIn fourth"  value="Ingresar">
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Olvidaste tu contraseña?</a>
+    </div>
+
+  </div>
+</div>
